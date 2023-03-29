@@ -132,21 +132,19 @@ const showUserModal = (e:Event):void => {
     let descid:string;
 
     if (target === userProfileBtn) {
+        userinfo;
         userId = user.id;
         descid = desc.id;
         userProfileBtn.id = user.id;
-        userProfileBtn.id = desc.id
-        descEl.innerText = user.innerText;
+        descEl.innerText = descEl.innerText;
         usernameEl.innerText = user.innerText;
     }
     else {
         userId = target.id;
-        descid = target.id
+        descid = target.id;
         usernameEl.innerText = target.innerText;
         descEl.innerText = target.innerText;
     }
-    console.log(userId);
-    console.log(descEl);
 
     // Show user profile modal
     userModal.style.display = "block";
